@@ -1,0 +1,244 @@
+===============================================================
+= JOB       : RTRWEUR1_EUR0_D0#TRWEUR1_ASP001DD[(1500 11/30/17),(0AAAAAAAAAA4BC2P)].TRWEUR1_ASP00100
+= USER      : rtrweur1            FR/C//MICHELIN/RTRWEUR1
+= JCLFILE   : $GI4_EXP_SHELL/runprog
+= Job Number: 36832316
+= Thu 11/30/17 15:00:08 CET
+===============================================================
+TWS for UNIX/JOBMANRC 8.5
+AWSBIS307I Starting /bustools/tws/850/maestrox/TWA/TWS/jobmanrc $GI4_EXP_SHELL/runprog
+
+Tivoli Workload Scheduler (UNIX)/JOBINFO 8.5 (20140630)
+Installed for user "maestrox".
+Locale LANG set to the following: "en"
+===============================================================
+STDLIST: /bustools/tws/850/maestrox/TWA/TWS/stdlist/2017.11.30/O36832316.1500
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+--> .jobmanrc processing (rtrweur1)
+--> Setting up the environment (rtrweur1) ... [OK]
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+--> stdout & stderr of JCL processing
+
+
+--- initialisation des variables oracle !! ---
+
+
+--- no specific local variable to initialize ---
+
+EXECUTION DE : /busapps/rtrw/eur1/1.0/trwBatch/automaticSetToPlannedBatch.sh
+
+--------------------
+CONFIG: LOGS_CONFIG = conf/logback.xml
+CONFIG: JAVA_HOME = /usr/java6
+CONFIG: java.version = java version "1.6.0" Java(TM) SE Runtime Environment (build pap3260sr16fp35-20161024_04(SR16 FP35)) IBM J9 VM (build 2.4, JRE 1.6.0 IBM J9 2.4 AIX ppc-32 jvmap3260sr16fp35-20161012_322120 (JIT enabled, AOT enabled) J9VM - 20161012_322120 JIT - r9_20160630_120368 GC - GA24_Java6_SR16_20161012_1548_B322120) JCL - 20161020_01
+--------------------
+Apache OpenEJB 3.1.2    build: 20091010-03:11
+http://openejb.apache.org/
+MQ RA startorg.apache.openejb.core.transaction.SimpleBootstrapContext@503c503c
+WorkManager started polling thread 
+  ** Starting Services **
+  NAME                 IP              PORT  
+  telnet               127.0.0.1       4202  
+2017-11-30 15:00:36 [ERROR] automaticSetToPlannedBatch:OpenEJB.hsql                   [Server@59d459d4]: [Thread[HSQLDB Server @59d459d4,5,main]]: run()/openDatabases(): 
+  hsql                 127.0.0.1       9001  
+  ejbd                 127.0.0.1       4201  
+  httpejbd             127.0.0.1       4204  
+  admin thread         127.0.0.1       4200  
+-------
+Ready!
+2017-11-30 15:00:43 [INFO ] automaticSetToPlannedBatch:c.m.t.batch.AutomaticSetToPlannedBatchProcess Start of Set to Planned Automaticaly Process
+2017-11-30 15:01:01 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1274064</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:01 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1274064 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1274064 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:01:03 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1274073</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:03 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1274073 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1274073 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:01:06 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1274074</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:06 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1274074 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1274074 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:01:08 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1274083</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:08 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1274083 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1274083 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:01:10 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1274084</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:11 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1274084 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1274084 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:01:13 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1274093</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:13 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1274093 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1274093 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:01:15 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1274094</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:15 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1274094 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1274094 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:01:18 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1274103</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:18 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1274103 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1274103 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:01:20 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1312218</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:20 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1312218 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1312218 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:01:23 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1312228</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:23 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1312228 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1312228 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:01:25 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1312257</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:25 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1312257 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1312257 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:01:27 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1312260</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:27 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1312260 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1312260 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:01:29 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1312261</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:29 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1312261 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1312261 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:01:31 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1312271</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:31 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1312271 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1312271 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:01:33 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1312313</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:33 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1312313 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1312313 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:01:35 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1312323</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:35 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1312323 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1312323 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:01:36 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1312332</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:36 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1312332 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1312332 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:01:38 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1312342</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:38 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1312342 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1312342 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:01:41 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1312352</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:01:41 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1312352 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1312352 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:05:37 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TRW => TMS - SET_LOAD_TO_PLANNED : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:generated.ProcessSetLoadToPlannedType xmlns:ns2="generated">
+    <ApiHeader>
+        <OperationName>processSetLoadToPlanned</OperationName>
+    </ApiHeader>
+    <SystemLoadID>1341201</SystemLoadID>
+</ns2:generated.ProcessSetLoadToPlannedType>
+
+2017-11-30 15:05:37 [ERROR] automaticSetToPlannedBatch:m.com.michelin.trw.dao.impl.LogMessageService TMS => TRW - SET_LOAD_TO_PLANNED : <?xml version = "1.0" encoding = "UTF-8"?><CISDocument><ApiHeader><OperationName>processSetLoadToPlannedResponse</OperationName></ApiHeader><ResponseHeader><CompletedSuccessfully>false</CompletedSuccessfully><Error><Item>0</Item><Severity>Error</Severity><Code>47299</Code><UserMessage>Cannot set load 1341201 to Planned: rating failed.</UserMessage><SystemMessage>Cannot set load 1341201 to Planned: rating failed.</SystemMessage></Error></ResponseHeader><LoadSetToPlannedFailedFlag>true</LoadSetToPlannedFailedFlag></CISDocument>
+2017-11-30 15:08:10 [INFO ] automaticSetToPlannedBatch:c.m.t.batch.AutomaticSetToPlannedBatchProcess End of Set to Planned Automaticaly Process
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+--> resuming processing of .jobmanrc
+	 EXITING WITH STATUS 0
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================
+= Exit Status           : 0
+= System Time (Seconds) : 3     Elapsed Time (Minutes) : 8
+= User Time (Seconds)   : 39
+= Thu 11/30/17 15:08:11 CET
+===============================================================

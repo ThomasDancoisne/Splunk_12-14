@@ -1,0 +1,136 @@
+
+TRW EUR0 Production
+
+Buisness Support Portal 1.2.3
+Module Information
+class : Maestro
+Displayed Plan
+
+===============================================================
+
+= JOB       : RTRWEUR1_EUR0_D0#TRWEUR1_FSD001DD[(1900 10/11/17),(0AAAAAAAAAA3E4LN)].TRWEUR1_FSD00100
+
+= USER      : rtrweur1            FR/C//MICHELIN/RTRWEUR1
+
+= JCLFILE   : $GI4_EXP_SHELL/runprog
+
+= Job Number: 133342
+
+= Wed 10/11/17 19:00:19 CEST
+
+===============================================================
+
+TWS for UNIX/JOBMANRC 8.5
+
+AWSBIS307I Starting /bustools/tws/850/maestrox/TWA/TWS/jobmanrc $GI4_EXP_SHELL/runprog
+
+ 
+
+Tivoli Workload Scheduler (UNIX)/JOBINFO 8.5 (20140630)
+
+Installed for user "maestrox".
+
+Locale LANG set to the following: "en"
+
+===============================================================
+
+STDLIST: /bustools/tws/850/maestrox/TWA/TWS/stdlist/2017.10.11/O133342.1900
+
+ 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+--> .jobmanrc processing (rtrweur1)
+
+--> Setting up the environment (rtrweur1) ... [OK]
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+--> stdout & stderr of JCL processing
+
+ 
+
+ 
+
+--- initialisation des variables oracle !! ---
+
+ 
+
+ 
+
+--- no specific local variable to initialize ---
+
+ 
+
+EXECUTION DE : /busapps/rtrw/eur1/1.0/trwBatch/findShipmentToDeleteBatch.sh
+
+ 
+
+--------------------
+
+CONFIG: LOGS_CONFIG = conf/logback.xml
+
+CONFIG: JAVA_HOME = /usr/java6
+
+CONFIG: java.version = java version "1.6.0" Java(TM) SE Runtime Environment (build pap3260sr16fp35-20161024_04(SR16 FP35)) IBM J9 VM (build 2.4, JRE 1.6.0 IBM J9 2.4 AIX ppc-32 jvmap3260sr16fp35-20161012_322120 (JIT enabled, AOT enabled) J9VM - 20161012_322120 JIT - r9_20160630_120368 GC - GA24_Java6_SR16_20161012_1548_B322120) JCL - 20161020_01
+
+--------------------
+
+Apache OpenEJB 3.1.2    build: 20091010-03:11
+
+http://openejb.apache.org/
+
+MQ RA startorg.apache.openejb.core.transaction.SimpleBootstrapContext@4b784b78
+
+WorkManager started polling thread
+
+  ** Starting Services **
+
+  NAME                 IP              PORT
+
+  telnet               127.0.0.1       4202
+
+2017-10-11 19:00:45 [ERROR] findShipmentToDeleteBatch:OpenEJB.hsql                    [Server@1b2c1b2c]: [Thread[HSQLDB Server @1b2c1b2c,5,main]]: run()/openDatabases():
+
+  hsql                 127.0.0.1       9001
+
+  ejbd                 127.0.0.1       4201
+
+  httpejbd             127.0.0.1       4204
+
+  admin thread         127.0.0.1       4200
+
+-------
+
+Ready!
+
+2017-10-11 19:00:50 [INFO ] findShipmentToDeleteBatch:c.m.t.batch.FindShipmentToDeleteBatchProcess Start of Find Shipment To Delete Process
+
+2017-10-11 19:15:05 [INFO ] findShipmentToDeleteBatch:c.m.t.batch.FindShipmentToDeleteBatchProcess End of Find Shipment To Delete Process
+
+ 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+--> resuming processing of .jobmanrc
+
+	 EXITING WITH STATUS 0
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+===============================================================
+
+= Exit Status           : 0
+
+= System Time (Seconds) : 8     Elapsed Time (Minutes) : 14
+
+= User Time (Seconds)   : 197
+
+= Wed 10/11/17 19:15:05 CEST
+
+===============================================================
+
