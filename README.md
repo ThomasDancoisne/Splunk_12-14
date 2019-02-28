@@ -18,7 +18,7 @@
 
 ## 1. Stockage
 
-[Exemples de fichiers de log](./exemples/)
+[Exemples de fichiers de log](./logsamples/)
 
 Pour ajouter un fichier, un fois connecté se rendre, dans la barre d'en-tête, dans le menu : **Settings > Add data > Upload from my computer**
 
