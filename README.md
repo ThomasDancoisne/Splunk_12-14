@@ -46,7 +46,7 @@ Pour cela la commande ```top``` est un bon candidat ou la commande ```sort```.
 
 On va donc regarder les requête en erreur (status >= 400) pour un login.
 
-### Bonus : Utiliser le lookup status_by_code.csv pour expliciter les erreurs
+### Bonus : Utiliser le lookup status_code.csv pour expliciter les erreurs
 
 Tips: regardez du coté de la commande ```lookup```
 
@@ -76,7 +76,7 @@ Ajoutez le au dashboard que vous aviez précédemment créé. Et lié au sélect
 #### Bonus
 
 * Trouver le navigateur le plus utilisé
-* Lister les dernière erreur survenue
+* Lister les dernières erreurs survenues
 
 ### Suivre l'état des Processus Splunk
 
